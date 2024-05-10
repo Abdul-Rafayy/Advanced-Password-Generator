@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="box"><h1>Advanced Password Generator</h1>
+    <div id="characters"></div><br><br>
+    <input type="range" min="1" max="20" value = "12" id="numCharacters" onchange="updateCharacterCount()"><br><br>
+    Numbers of Characters <span id="characterCount"> 12</span><br><br>
+    Password with a-z<input type="checkbox" id="lowercase" checked><br><br>
+    Password with A-Z<input type="checkbox" id="uppercase" checked><br><br>
+    Password with 0-9<input type="checkbox" id="digits" checked><br><br>
+    Password with Special Characters<input type="checkbox" id="special" checked><br><br>
+    <button onclick="generateCharacters()" class="btn">Generate</button>
+</div>
+
+
+
+<!-- <h2>Password Generator</h2>
+    <input type="text" id="password" readonly>
+    <button onclick="generatePassword()">Generate Password</button>
+    <br><br>
+    <input type="checkbox" id="lowercase" checked>a-z
+    <input type="checkbox" id="uppercase" checked>A-Z
+    <input type="checkbox" id="digits" checked>0-9
+    <input type="checkbox" id="special" checked>Special Characters
+    <br><br>
+    <input type="checkbox" id="showPassword">Show Password
+    <br><br> -->
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Character Generator</title>
+<style>
+    #characters {
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 18px;
+        width: 300px;
+        background-color: brown;
+    }
+    #numCharacters{
+        width: 200px;
+
+    }
+</style>
+</head>
+<body>
+    <h2>Random Character Generator</h2>
+    <input type="range" id="numCharacters" min="1" max="50" value="12" onchange="updateCharacterCount()"> Number of Characters: <span id="characterCount">12</span>
+    <br><br>
+    <div id="characters"></div>
+    <input type="text" id="characters" readonly>
+    <button onclick="generateCharacters()">Generate Characters</button>
+    <br><br>
+    <input type="checkbox" id="lowercase" checked>a-z
+    <input type="checkbox" id="uppercase" checked>A-Z
+    <input type="checkbox" id="digits" checked>0-9
+    <input type="checkbox" id="special" checked>Special Characters
+    <br>
+
+    
+    <script>
+        function updateCharacterCount() {
+            document.getElementById("characterCount").innerText = document.getElementById("numCharacters").value;
+        }
+
+        function generateCharacters() {
+            var numCharacters = parseInt(document.getElementById("numCharacters").value);
+            var charactersDiv = document.getElementById("characters");
+            charactersDiv.innerHTML = '';
+
+            var charset = "";
+            var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+            var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var digitChars = "0123456789";
+            var specialChars = "!@#$%^&*()_+{}[]|:;<>,.?/~";
+
+            if (document.getElementById("lowercase").checked)
+                charset += lowercaseChars;
+            if (document.getElementById("uppercase").checked)
+                charset += uppercaseChars;
+            if (document.getElementById("digits").checked)
+                charset += digitChars;
+            if (document.getElementById("special").checked)
+                charset += specialChars;
+
+            for (var j = 0; j < numCharacters; j++) {
+                var character = charset.charAt(Math.floor(Math.random() * charset.length));
+                charactersDiv.innerHTML += character;
+            }
+        }
+
+      
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+

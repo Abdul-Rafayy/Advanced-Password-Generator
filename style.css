@@ -1,0 +1,55 @@
+.box{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 26%;
+    background-color: yellow;
+    width: 50%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 1px 1px 4px 4px yellow;
+}
+/* #input{
+    width: 300px;
+    height: 30px;
+    font-size: larger;
+} */
+
+#numCharacters{
+    width: 50%;
+}
+#characters{
+    
+    height: 20px;
+    
+    
+    background-color: yellow;
+    border: 1px solid black;
+}
+.btn{
+    background-color:yellow;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.btn:active{
+    background-color: yellow;
+    transition:ease;
+}
+body{
+    background-color: black;
+}
+/* .btn:active{
+    background-color: red;
+    border: 2px solid black;
+} */
+/* #password {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+} */
+
+
+
